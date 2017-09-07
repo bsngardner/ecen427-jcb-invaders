@@ -1,7 +1,7 @@
 
 # ##############################################################################
 # Created by Base System Builder Wizard for Xilinx EDK 13.4 Build EDK_O.87xd
-# Wed Sep 06 13:58:10 2017
+# Thu Sep 07 15:08:20 2017
 # Target Board:  digilent atlys Rev C
 # Family:    spartan6
 # Device:    xc6slx45
@@ -44,7 +44,7 @@ BEGIN lmb_bram_if_cntlr
  PARAMETER INSTANCE = microblaze_0_i_bram_ctrl
  PARAMETER HW_VER = 3.00.b
  PARAMETER C_BASEADDR = 0x00000000
- PARAMETER C_HIGHADDR = 0x00001fff
+ PARAMETER C_HIGHADDR = 0x00007fff
  BUS_INTERFACE SLMB = microblaze_0_ilmb
  BUS_INTERFACE BRAM_PORT = microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block
 END
@@ -60,7 +60,7 @@ BEGIN lmb_bram_if_cntlr
  PARAMETER INSTANCE = microblaze_0_d_bram_ctrl
  PARAMETER HW_VER = 3.00.b
  PARAMETER C_BASEADDR = 0x00000000
- PARAMETER C_HIGHADDR = 0x00001fff
+ PARAMETER C_HIGHADDR = 0x00007fff
  BUS_INTERFACE SLMB = microblaze_0_dlmb
  BUS_INTERFACE BRAM_PORT = microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block
 END
