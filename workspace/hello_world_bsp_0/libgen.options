@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_0
+REPOSITORIES=
+HWSPEC=../ecen427-jcb-invaders_hw_platform/system.xml

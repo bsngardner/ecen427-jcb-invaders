@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project hello_world_0 ****
+
+make all 
+Building target: hello_world_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.b -mno-xl-soft-mul -o"hello_world_0.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/13.4/ise_ds/edk/gnu/microblaze/nt64/bin/../lib/gcc/microblaze-xilinx-elf/4.1.2/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/proj/epdsw/gnu/mb_gnu/src/gcc/libgloss/microblaze/crtinit.S:56: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [hello_world_0.elf] Error 1
